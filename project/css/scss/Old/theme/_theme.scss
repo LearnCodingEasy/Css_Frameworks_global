@@ -1,0 +1,9 @@
+/*========== Variables Dark theme ==========*/
+body.dark-theme {
+  --title-color: #f1f3f2;
+  --text-color: #c7d1cc;
+  --body-color: hsl(5, 0%, 8%);
+  --container-color:  hsl(5, 0%, 10%);
+  --white-color:hsl(var(--HSL-Color), 0%, 1%);
+  --black-color:hsl(var(--HSL-Color), 0%, 100%);
+}

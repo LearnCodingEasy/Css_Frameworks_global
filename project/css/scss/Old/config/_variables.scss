@@ -1,0 +1,72 @@
+
+
+/* =============== VARIABLES CSS =============== */
+:root{
+  /* ===== HEADER ===== */
+  --header-height: 5rem;
+  
+  /* ========== COLORS ========== 
+  = Go To https://www.w3schools.com/colors/colors_hsl.asp To Change Color
+  = Color Mode HSL(Hue, Saturation, Lightness) 
+  = HSL (درجة اللون، التشبع، الإضاءة) 
+  */
+  -First:#392e2d; -Second:#ff1500; -Third:#0b0909;
+  
+  // []
+  --HSL-Color: 5;
+  --first-color: hsl(var(--HSL-Color), 11%, 20%);
+  --second-color: hsl(var(--HSL-Color), 100%, 50%);
+  --third-color: hsl(var(--HSL-Color), 10%, 4%);
+  --body-color: hsl(var(--HSL-Color), 0%, 99%);
+  --container-color: hsl(var(--HSL-Color), 0%, 100%);
+  --title-color: hsl(var(--HSL-Color), 1%, 5%);
+  --text-color: hsl(var(--HSL-Color), 0%, 35%);
+  --text-color-light: hsl(var(--HSL-Color), 0%, 55%);
+  --button-color: hsl(var(--HSL-Color), 0%, 17%);
+  --button-color-alt: hsl(var(--HSL-Color), 0%, 21%);
+  --border-color: hsl(var(--HSL-Color), 0%, 94%);
+  --white-color:hsl(var(--HSL-Color), 0%, 100%);
+  --white-same-color:hsl(var(--HSL-Color), 0%, 100%);
+  --black-color:hsl(var(--HSL-Color), 0%, 1%);
+  --black-same-color:hsl(var(--HSL-Color), 0%, 1%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  
+  
+
+  --biggest-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  // Responsive typography
+  @media screen and (min-width: 968px){
+      --biggest-font-size: 2.5rem;
+      --h1-font-size: 2.25rem;
+      --h2-font-size: 1.5rem;
+      --h3-font-size: 1.25rem;
+      --normal-font-size: 1rem;
+      --small-font-size: .875rem;
+      --smaller-font-size: .813rem;
+  }
+
+  
+
+  /*========== Unit Rem ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --unit-rem-0-5: .5rem;
+  --unit-rem-0-75: .75rem;
+  --unit-rem-1: 1rem;
+  --unit-rem-1-5: 1.5rem;
+  --unit-rem-2: 2rem;
+  --unit-rem-2-5: 2.5rem;
+  --unit-rem-3: 3rem;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}

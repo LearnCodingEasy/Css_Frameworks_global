@@ -1,0 +1,19 @@
+/* ========== Layout ========== */
+// Config
+@import 'config/variables.scss';
+
+.container {
+  max-width: 1024px;
+  width: calc(100% - 2rem);
+  margin: 0 auto;
+  background-color: var(--container-color);
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+
+.db_grid {
+  display: grid;
+  gap: 1.5rem;
+}

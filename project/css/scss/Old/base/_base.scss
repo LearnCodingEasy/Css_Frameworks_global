@@ -1,0 +1,37 @@
+/* ========== BASE ========== */
+button,
+input{
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body {
+  // margin: var(--header-height) 0 0 0;
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+h1,h2,h3,h4{
+  color: var(--title-color);
+  font-weight: var(--font-medium);  
+  margin: 0;
+}
+
+
+
+
+
+button{
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* For Scrollbar */
+::-webkit-scrollbar {
+  width: 1rem;
+  background-color: var(--first-color);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--second-color);
+  border-radius: 0.25rem;
+}

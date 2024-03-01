@@ -1,0 +1,22 @@
+/* ========== Classes ========== */
+
+// Config
+@import 'config/variables.scss';
+
+// 
+.header_f_t{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+}
+
+.section {
+  padding: 4rem 0 2rem;
+}
+.section_title{
+  font-size: var(--h1-font-size);
+  color: var(--color-title);
+}
+

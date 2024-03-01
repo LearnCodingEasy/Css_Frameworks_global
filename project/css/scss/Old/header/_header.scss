@@ -1,0 +1,234 @@
+
+// Config
+@import 'config/variables.scss';
+
+// Header
+.header{
+  // border: 0.1rem solid #f00;
+  overflow: hidden;
+  .nav{
+    
+    .nav_wrapper{
+      .nav_container{
+        .nav_inner{
+          // max-width: 1024px;
+          height: var(--header-height);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .nav_logo {
+            color: var(--text-color);
+            font-weight: var(--font-medium);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: 0.4s;
+            .nav_logo_icon{
+              flex-basis: 40px;
+              font-size: 3vw;
+              height: 100%;
+              display: inline-flex;
+              justify-content: center;
+              align-items: center;
+              // color: var(--third-color);
+            }
+            .nav_logo_text{
+              // border: 0.1rem solid #f00;
+              flex-grow: 1;
+              font-size: 6vw;
+              text-transform: capitalize;
+              font-family: var(--font-family-third);
+              text-align: center;
+              color: var(--white-same-color);
+              z-index: 2;
+            }
+            .nav_logo_image{}
+            /* Event  */
+            &:hover{
+              color: var(--second-color);
+            }
+            /* Bootstrap Devices */
+            /* Small Devices (Mobail, Less Than 575.98px) = Bootstrap V5 Xs */
+            @media screen and (max-width: 575.98px) {}
+            /* Medium Devices (Phones, 576px And 677px) = Bootstrap V5 Sm */
+            @media screen and (min-width:576px) and (max-width:677px) {}
+            /* Large Devices (Phones, 678px And 767px) */
+            @media screen and (min-width:678px) and (max-width:767px) {}
+            /* Medium Devices (Tablets, 768px And 991px) = Bootstrap V5 Md */
+            @media screen and (min-width:768px) and (max-width:991px) {
+              flex-basis: 50%;
+            }
+            /* Small Devices (Desktops, 992px And 1199px) = Bootstrap V5 Lg */
+            @media screen and (min-width:992px) and (max-width:1199px) {
+              flex-basis: 50%;
+            }
+            /* Medium Devices (Medium Desktops, 1200px And 1399px) = Bootstrap V5 Xl */
+            @media screen and (min-width:1200px) and (max-width:1399px) {
+              flex-basis: 50%;
+            }
+            /* Large Devices (Large Desktops, 1400px And Up) = Bootstrap V5 Xxl */
+            @media screen and (min-width:1400px) {
+              flex-basis: 50%;
+            }
+          }
+          .nav_menu{
+            font-family: var(--font-family-third);
+            @media screen and (max-width: 768px) {
+              position: fixed;
+              top: -100%;
+              left: 0;
+              width: 100%;
+              padding: 1.5rem 0 1rem;
+              text-align: center;
+              background-color: var(--body-color);
+              transition: 0.4s;
+              box-shadow: 0 4px 4px rgba(0,0,0,0.1);
+              border-radius: 0 0 1rem 1rem;
+              z-index: var(--z-fixed);
+            }
+            .nav_list{
+              /* Bootstrap Devices */
+                /* Small Devices (Mobail, Less Than 575.98px) = Bootstrap V5 Xs */
+                @media screen and (max-width: 575.98px) {
+                  
+                  }
+                  /* Medium Devices (Phones, 576px And 677px) = Bootstrap V5 Sm */
+                  @media screen and (min-width:576px) and (max-width:677px) {
+                  
+                  }
+                  /* Large Devices (Phones, 678px And 767px) */
+                  @media screen and (min-width:678px) and (max-width:767px) {
+                  
+                  }
+                  /* Medium Devices (Tablets, 768px And 991px) = Bootstrap V5 Md */
+                  @media screen and (min-width:768px) and (max-width:991px) {display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 100%;}
+                  /* Small Devices (Desktops, 992px And 1199px) = Bootstrap V5 Lg */
+                  @media screen and (min-width:992px) and (max-width:1199px) {display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 100%;}
+                  /* Medium Devices (Medium Desktops, 1200px And 1399px) = Bootstrap V5 Xl */
+                  @media screen and (min-width:1200px) and (max-width:1399px) {display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 100%;}
+                  /* Large Devices (Large Desktops, 1400px And Up) = Bootstrap V5 Xxl */
+                  @media screen and (min-width:1400px) {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 100%;
+                  }
+              .nav_item{
+                /* Bootstrap Devices */
+                /* Small Devices (Mobail, Less Than 575.98px) = Bootstrap V5 Xs */
+                @media screen and (max-width: 575.98px) {
+                margin-bottom: var(--unit-rem-2);
+                }
+                /* Medium Devices (Phones, 576px And 677px) = Bootstrap V5 Sm */
+                @media screen and (min-width:576px) and (max-width:677px) {
+                margin-bottom: var(--unit-rem-2);
+                }
+                /* Large Devices (Phones, 678px And 767px) */
+                @media screen and (min-width:678px) and (max-width:767px) {
+                margin-bottom: var(--unit-rem-2);
+                }
+                /* Medium Devices (Tablets, 768px And 991px) = Bootstrap V5 Md */
+                @media screen and (min-width:768px) and (max-width:991px) {}
+                /* Small Devices (Desktops, 992px And 1199px) = Bootstrap V5 Lg */
+                @media screen and (min-width:992px) and (max-width:1199px) {}
+                /* Medium Devices (Medium Desktops, 1200px And 1399px) = Bootstrap V5 Xl */
+                @media screen and (min-width:1200px) and (max-width:1399px) {}
+                /* Large Devices (Large Desktops, 1400px And Up) = Bootstrap V5 Xxl */
+                @media screen and (min-width:1400px) {}
+                .nav_link{
+                  color: var(--text-color);
+                  font-weight: var(--font-medium);
+                  font-weight: var(--font-bold);
+                  font-size: 18px;
+                }
+                .nav_active{
+                  color: var(--second-color);
+                }
+              }
+            }
+            /* Bootstrap Devices */
+            /* Small Devices (Mobail, Less Than 575.98px) = Bootstrap V5 Xs */
+            @media screen and (max-width: 575.98px) {}
+            /* Medium Devices (Phones, 576px And 677px) = Bootstrap V5 Sm */
+            @media screen and (min-width:576px) and (max-width:677px) {}
+            /* Large Devices (Phones, 678px And 767px) */
+            @media screen and (min-width:678px) and (max-width:767px) {}
+            /* Medium Devices (Tablets, 768px And 991px) = Bootstrap V5 Md */
+            @media screen and (min-width:768px) and (max-width:991px) {
+              flex-basis: 35%;
+            }
+            /* Small Devices (Desktops, 992px And 1199px) = Bootstrap V5 Lg */
+            @media screen and (min-width:992px) and (max-width:1199px) {
+              flex-basis: 35%;
+            }
+            /* Medium Devices (Medium Desktops, 1200px And 1399px) = Bootstrap V5 Xl */
+            @media screen and (min-width:1200px) and (max-width:1399px) {
+              flex-basis: 35%;
+            }
+            /* Large Devices (Large Desktops, 1400px And Up) = Bootstrap V5 Xxl */
+            @media screen and (min-width:1400px) {
+              flex-basis: 35%;
+            }
+          }
+          .show_menu{
+            top: var(--header-height);
+          }
+          .nav_user{
+            color: var(--text-color);
+            font-weight: var(--font-medium);
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-basis: 15%;
+            .user_icon{
+              font-size: var(--h3-font-size);
+              margin-right: var(--unit-rem-0-5);
+              i{}
+            }
+            .user_image{
+              width: 50px;
+              height: 50px;
+              display: flex;
+              border-radius: 50%;
+              overflow: hidden;
+              padding: 6px;
+              background-color: var(--second-color);
+            }
+          }
+          .nav_toggle{
+            color: var(--text-color);
+            font-weight: var(--font-medium);
+            font-size: 5vw;
+            cursor: pointer;
+            .nav_toggle_icon{}
+            /* Bootstrap Devices */
+            /* Small Devices (Mobail, Less Than 575.98px) = Bootstrap V5 Xs */
+            @media screen and (max-width: 575.98px) {display: block;}
+            /* Medium Devices (Phones, 576px And 677px) = Bootstrap V5 Sm */
+            @media screen and (min-width:576px) and (max-width:677px) {display: block;}
+            /* Large Devices (Phones, 678px And 767px) */
+            @media screen and (min-width:678px) and (max-width:767px) {display: block;}
+            /* Medium Devices (Tablets, 768px And 991px) = Bootstrap V5 Md */
+            @media screen and (min-width:768px) and (max-width:991px) {display: none;}
+            /* Small Devices (Desktops, 992px And 1199px) = Bootstrap V5 Lg */
+            @media screen and (min-width:992px) and (max-width:1199px) {display: none;}
+            /* Medium Devices (Medium Desktops, 1200px And 1399px) = Bootstrap V5 Xl */
+            @media screen and (min-width:1200px) and (max-width:1399px) {display: none;}
+            /* Large Devices (Large Desktops, 1400px And Up) = Bootstrap V5 Xxl */
+            @media screen and (min-width:1400px) {display: none;}
+          }
+        }
+      }
+    }
+  }
+}
+

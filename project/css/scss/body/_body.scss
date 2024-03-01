@@ -1,0 +1,19 @@
+
+/** ? BODY
+ * 
+ * Default Margin In All Is [ 8 ]
+ * - Remove The Margin In All Browsers.
+ *
+ * - Transition For Animation Dark Mode
+ *
+ * - Font Family Is [ Optional ]
+ * - Font Size Is [ Optional ]
+ *
+ */
+
+body {
+  margin: 0;
+  transition: .4s;
+  font-family: var(--font-family-first);
+  font-size: var(--font-size-base);
+}

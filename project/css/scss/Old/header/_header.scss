@@ -1,13 +1,12 @@
 
 // Config
-@import 'config/variables.scss';
+@import 'root/root';
 
 // Header
 .header{
   // border: 0.1rem solid #f00;
   overflow: hidden;
-  .nav{
-    
+  .nav {
     .nav_wrapper{
       .nav_container{
         .nav_inner{
@@ -18,7 +17,7 @@
           align-items: center;
           .nav_logo {
             color: var(--text-color);
-            font-weight: var(--font-medium);
+            font-weight: var(--font-weight-medium);
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -231,4 +230,3 @@
     }
   }
 }
-

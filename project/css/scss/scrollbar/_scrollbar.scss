@@ -1,0 +1,10 @@
+
+/* For Scrollbar */
+::-webkit-scrollbar {
+  width: 1rem;
+  background-color: var(--scrollbar);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border-radius: 0.20rem;
+}

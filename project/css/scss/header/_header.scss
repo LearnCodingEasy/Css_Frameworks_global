@@ -1,0 +1,154 @@
+// Config
+@import "root/root";
+
+// Header
+.body {
+  &.active_body {
+    .header {
+      .nav {
+        width: 15rem;
+        .hidden {
+          display: inline;
+        }
+        .nav_menu,
+        .nav_header,
+        .sidebar_profile,
+        .nav_user {
+          justify-content: start;
+          align-items: stretch;
+        }
+      }
+    }
+  }
+  .header,
+  .header_left {
+    overflow: hidden;
+    position: relative;
+    .nav {
+      background-color: #f4f4f6;
+      position: fixed;
+      width: var(--header-width_left);
+      height: calc(var(--header-height_left) - 0.75rem);
+      height: calc(var(--header-height_left));
+      padding: 1rem 0.75rem;
+      border-radius: 0.75rem;
+      display: flex;
+      flex-direction: column;
+      transition: width 500ms ease;
+      .nav_wrapper {
+        height: 100%;
+        .nav_container {
+          height: 100%;
+          .nav_inner {
+            height: 100%;
+            .nav_header {
+              display: flax;
+              justify-content: center;
+              align-items: center;
+              overflow: hidden;
+              height: 10%;
+              .nav_logo {
+                cursor: pointer;
+                all: unset;
+                font: inherit;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1.25rem;
+                .nav_logo_icon {
+                  width: 3.25rem;
+                  height: 3.25rem;
+                  background-color: #f4f4f6;
+                  padding: 0.4rem;
+                  border-radius: 0.5rem;
+                  font-size: 2rem;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  display: none;
+                }
+                .nav_logo_text {
+                  display: none;
+                }
+                .nav_logo_image {
+                  width: 3.25rem;
+                  height: 3.25rem;
+                  background-color: #f4f4f6;
+                  padding: 0.4rem;
+                  border-radius: 0.5rem;
+                }
+                /* Event  */
+                &:hover {
+                }
+              }
+            }
+            .nav_main {
+              display: flax;
+              justify-content: center;
+              align-items: center;
+              overflow: hidden;
+              height: 75%;
+              .nav_menu {
+                flex-direction: column;
+                margin-bottom: auto;
+                gap: 0.6rem;
+                padding-top: 1.5rem;
+                border-top: 1px solid rgb(211 211 211);
+                .nav_list {
+                  .nav_item {
+                    .nav_link {
+                      display: flex;
+                      padding: 0.6rem;
+                      border-radius: 0.5rem;
+                      gap: 1.5rem;
+                      &.nav_active {
+                        background-color: #e4e4e8;
+                      }
+                      &:hover {
+                        background-color: #e4e4e8;
+                      }
+                      .nav_link_icon {
+                      }
+                      .nav_link_text {
+                        display: none;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .nav_footer {
+              height: 15%;
+              .nav_user {
+                .user_icon {
+                  i {
+                  }
+                }
+                .user_image {
+                }
+              }
+              .nav_toggle {
+                position: absolute;
+                top: 10px;
+                right: -35px;
+                padding: 0.5rem;
+                background-color: #fff;
+                border-radius: 10%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.25rem;
+                transition: transform 0.25s ease;
+                .nav_toggle_icon {
+                }
+              }
+            }
+            // B [ Show Menu ]
+            .show_menu {
+            }
+          }
+        }
+      }
+    }
+  }
+}

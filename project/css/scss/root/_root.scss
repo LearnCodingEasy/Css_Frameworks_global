@@ -1,17 +1,16 @@
-:root{
-  
+:root {
   /* ? ========== FONT ========== */
   /* ? Font Name */
-  --font-family-first: 'Poppins', sans-serif;
-  --font-family-Second: 'Work Sans', sans-serif;
-  --font-family-third: 'Roboto', sans-serif;
-  
+  --font-family-first: "Poppins", sans-serif;
+  --font-family-Second: "Work Sans", sans-serif;
+  --font-family-third: "Roboto", sans-serif;
+
   /* ? Font Size */
   --font-size-base: 1rem;
   --font-size-normal: 1rem;
-  --font-size-small: .813rem;
-  --font-size-smaller: .75rem;
-  --font-size-big:1.5rem;
+  --font-size-small: 0.813rem;
+  --font-size-smaller: 0.75rem;
+  --font-size-big: 1.5rem;
 
   /* ? Font weight  */
   --font-weight-medium: 500;
@@ -19,12 +18,21 @@
 
   /* ? ========== Header ========== */
   --header-height: 5rem;
+  --header-width: 5rem;
+  // Left
+  --header-height_left: 100vh;
+  --header-width_left: 5rem;
 
   /* ========== COLORS ========== */
 
-  
-  // --text-color: #000;
-  // --text-color-light: #a3a3a3;
+  --first-color: 000;
+  --second-color: fff;
+  --color-first: 000;
+  --color-second: fff;
+
+  // ? Text
+  --text-color: #000;
+  --text-color-light: #a3a3a3;
   // --white-color: #fff;
   // --white-same-color: #fff;
   // --black-color: #000;
@@ -34,13 +42,12 @@
   // --body-color: #fcfcfc;
   // --border-color: #d7d7d7;
   // --title-color: #000;
-  // --text-color: #000;
-  // --text-color-light: #a3a3a3;
-  
+
   // --h1-font-size: 1.5rem;
   // --h2-font-size: 1.25rem;
   // --h3-font-size: 1rem;
-  
+
+  // ? Unit Size [ Rem, Px,  ]
   // --unit-rem-0-5: .5rem;
   // --unit-rem-0-75: .75rem;
   // --unit-rem-1: 1rem;
@@ -49,6 +56,7 @@
   // --unit-rem-2-5: 2.5rem;
   // --unit-rem-3: 3rem;
   // --z-tooltip: 10;
-
-
+  // ? Scrollbar
+  --scrollbar: #222;
+  --scrollbar-thumb: #fafafa;
 }

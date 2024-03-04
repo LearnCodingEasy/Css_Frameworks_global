@@ -1,24 +1,36 @@
 // ? Font
-@import 'font/font';
+@import "font/font";
 
 // ? Root
-@import 'root/root';
+@import "root/root";
 
 // ? Html
-@import 'html/html';
+@import "html/html";
 
 // ? Body
-@import 'body/body';
+@import "body/body";
+
+// ? Scrollbar
+@import "scrollbar/scrollbar";
 
 // ? Image
-@import 'image/image';
+@import "image/image";
 
-// ? A [ Link ] 
-@import 'a/a';
+// ? A [ Link ]
+@import "a/a";
 
-// ? UL [ Li ] 
-@import 'ul/ul';
+// ? UL [ Li ]
+@import "ul/ul";
 
-.explain_style{
+// ? UL [ Li ]
+@import "header/header";
+
+.explain_style {
   font-size: clamp(12px, 4vw, 32px);
+  margin-top: 4rem;
+  margin-left: 7rem;
+}
+
+body {
+  min-height: 1000px;
 }

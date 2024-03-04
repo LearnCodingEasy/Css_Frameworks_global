@@ -4,24 +4,46 @@ header(class="header" id="header")
     div(class='nav_wrapper')
       div(class='nav_container container')
         div(class='nav_inner')
-          a(href="#" class="nav_logo")
-            i(class="fas fa-bars nav_logo_icon")
-            span(class="nav_logo_text") foodbar
-          div(class='nav_menu' id="nav_menu")
-            ul(class="nav_list")
-              li(class="nav_item")
-                a(href="#" class="nav_link nav_active") shop
-              li(class="nav_item")
-                a(href="#" class="nav_link") Features
-              li(class="nav_item")
-                a(href="#" class="nav_link") Recipes
-              li(class="nav_item")
-                a(href="#" class="nav_link") Hotline
-          div(class='nav_user' id="nav_user")
-            span(class="user_icon")
-              i(class="fas fa-shopping-cart")
+          // Nav Header
+          div(class='nav_header')
+            a(href="#" class="nav_logo")
+              i(class="fas fa-bars nav_logo_icon")
+              img(src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+              class="img-fluid rounded-top nav_logo_image"
+              alt="")
+              span(class="nav_logo_text") foodbar
+          // Nav Main
+          div(class='nav_main')
+            div(class='nav_menu' id="nav_menu")
+              ul(class="nav_list")
+                li(class="nav_item")
+                  a(href="#" class="nav_link nav_active") 
+                    span(class="nav_link_icon") 
+                      i(class="fas fa-home")
+                    span(class="nav_link_text") Home
+                li(class="nav_item")
+                  a(href="#" class="nav_link")  
+                    span(class="nav_link_icon") 
+                      i(class="fas fa-folder")
+                    span(class="nav_link_text") Project
+                li(class="nav_item")
+                  a(href="#" class="nav_link")  
+                    span(class="nav_link_icon") 
+                      i(class="fas fa-tachometer-alt")
+                    span(class="nav_link_text") Dashboard
+                li(class="nav_item")
+                  a(href="#" class="nav_link")  
+                    span(class="nav_link_icon") 
+                      i(class="fas fa-tasks")
+                    span(class="nav_link_text") Tasks
 
-            span(class="user_image")
-              img(src="images/avataaars.webp" alt="") 
-          div(class='nav_toggle' id="nav_toggle")
-            i(class="fas fa-bars nav_toggle_icon")
+          // Nav Footer
+          div( class="nav_footer")
+            div(class='nav_user' id="nav_user")
+              span(class="user_icon")
+                i(class="fas fa-shopping-cart")
+
+              span(class="user_image")
+                img(src="images/avataaars.webp" alt="") 
+            div(class='nav_toggle' id="nav_toggle")
+              i(class="fas fa-bars nav_toggle_icon")
